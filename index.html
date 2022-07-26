@@ -127,7 +127,7 @@
         </div>
       </div>
 
-      <div class="scene">
+      
         <model-viewer
           bounds="tight"
           src="assets/models/atlante.glb"
@@ -144,6 +144,11 @@
           min-field-of-view="15.4deg"
           disable-zoom
         >
+        <button slot="hotspot-hand" data-position="0.0 1.05 0.5" 
+          data-normal="0.0 1.05 0.5">
+          <div id="annotation">This hotspot disappears completely</div>
+        </button>
+
           <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
           </div>
@@ -155,7 +160,7 @@
             <img class="imagen" src="assets/images/logo.png" alt="Logo Tv4" />
           </div>
         </model-viewer>
-      </div>
+      
     </div>
 
     <footer>

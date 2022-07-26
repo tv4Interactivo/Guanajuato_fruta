@@ -5,6 +5,30 @@
   color: #fff;
 }
 
+button{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  --min-hotspot-opacity: 0;
+}
+
+
+#annotation{
+  font-family: 'Ruda', sans-serif;
+  background-color:#76a238;
+  position: absolute;
+  transform: translate(-35px, 15px);
+  border-radius: 10px;
+  padding: 10px;
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
 body {
   text-align: center;
   background-color: #8fc444;
@@ -140,7 +164,7 @@ footer p{
 @media screen and (min-width:320px) and (max-width: 500px) {
 
   .dropbtn{
-    margin: 25px;
+    margin: 20px;
   }
 
   .dropdown-content{
@@ -158,32 +182,40 @@ footer p{
   }
 
   h1 {
-    font-family: "Averia Serif Libre", cursive;
+  
     font-size: 3rem;
     margin: auto;
-    color: #fde698;
   }
 
-  h3 {
-    font-family: "Averia Serif Libre", cursive;
-    font-size: 2rem;
-    margin: auto 10%;
-    padding: 10px;
-    color: #484750;
-    background-color: #fde698;
-    border-radius: 30px;
-  }
-
-  p {
+   p {
     font-size: 1.5rem;
-    margin: 3rem 2%;
   }
+
+  .main{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200vh;
+  }
+
   .content {
-    padding: 2rem 1rem;
+    width: 100%;
+    height: 50%;
   }
 
   .scene {
-    padding: 2rem 1rem;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+
+  footer{
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  footer p{
+    font-size: 1rem;
   }
 }
 
