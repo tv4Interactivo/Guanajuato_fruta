@@ -45,12 +45,24 @@ function copyURL() {
 function changeLang() {
   const esp = document.getElementById("text-esp");
   const eng = document.getElementById("text-eng");
-  if (esp.style.display === "block") {
+  const esp2 = document.getElementById("text-esp2");
+  const eng2 = document.getElementById("text-eng2");
+
+  if (esp.style.display === "flex") {
     esp.style.display = "none";
-    eng.style.display = "block";
+    eng.style.display = "flex";
   } else {
-    esp.style.display = "block";
+    esp.style.display = "flex";
     eng.style.display = "none";
   }
+
+  if (esp2.style.display === "flex") {
+    esp2.style.display = "none";
+    eng2.style.display = "flex";
+  } else {
+    esp2.style.display = "flex";
+    eng2.style.display = "none";
+  }
+
   toggle.style.display = "none";
 }
