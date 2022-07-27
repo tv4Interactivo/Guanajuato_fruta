@@ -5,7 +5,7 @@
   color: #fff;
 }
 
-button{
+.hot-hand{
   display: block;
   width: 20px;
   height: 20px;
@@ -35,18 +35,26 @@ body {
 }
 
 .navbar {
+  background-color: #76a238;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 5%;
-  background-color: #76a238;
+  padding: 0.1rem 2rem;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
+.logo {
+  width: 10%;
+  height: 10%;
+}
+
 .dropbtn {
-  background-color: #76a238;
-  margin: 30px 47px;
+  background-color: unset;
+  margin: 20px 47px;
   font-size: 30px;
   border: none;
   cursor: pointer;
@@ -85,12 +93,6 @@ body {
 /* Change color of dropdown links on hover */
 .dropdown-content button:hover {
   background-color:#61862e;
-}
-
-.interactivo {
-  width: 250px;
-  height: 15%;
-  padding: 2rem;
 }
 
 .main{
@@ -171,14 +173,8 @@ footer p{
     min-width: 70px;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .interactivo {
-    width: 50%;
+  .logo {
+    width: 40%;
   }
 
   h1 {
@@ -234,16 +230,22 @@ footer p{
   }
 
   h1 {
-    font-family: "Averia Serif Libre", cursive;
-    font-size: 10px;
+    font-size: 3rem;
   }
 
   p {
     font-size: 1.5rem;
+    margin: 0 6rem;
+  }
+
+  .main{
+    flex-direction: column;
   }
 
   .content {
-    padding: 2rem 1rem;
+    width: 100%;
+    height: 80%;
+    padding: 2rem;
   }
 }
 
