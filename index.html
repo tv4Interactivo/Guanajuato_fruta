@@ -8,12 +8,9 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Padauk&family=Ruda:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Ruda&display=swap" rel="stylesheet">
 
     <!-- Fontawesome -->
     <link
@@ -131,25 +128,38 @@
 
       
         <model-viewer
-          bounds="tight"
-          src="assets/models/atlante.glb"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          camera-controls
-          poster="assets/images/poster.webp"
-          shadow-intensity="1"
-          exposure="1.12"
-          shadow-softness="1"
-          camera-orbit="-0.1708deg 93.25deg auto"
-          camera-target="0.01m -0.02m 0.03112m"
-          min-camera-orbit="auto auto 5.843m"
-          min-field-of-view="15.4deg"
-          disable-zoom
+        enable-pan src="assets/models/fruta.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls poster="assets/images/poster.webp" 
+        shadow-intensity="1.09" 
+        min-camera-orbit="auto 0deg 1m"
+        min-field-of-view="14.18deg" 
+        max-camera-orbit="auto 104deg auto" 
+        shadow-softness="1" 
+        camera-orbit="515.5deg 65.71deg auto" 
+        exposure="0.73"
+        disable-zoom
         >
-        <button class="hot-hand" slot="hotspot-hand" data-position="0.0 1.05 0.5" 
-          data-normal="0.0 1.05 0.5">
-          <div id="annotation">This hotspot disappears completely</div>
-        </button>
+        <button id="text-esp4" style="display: block;" class="Hotspot" slot="hotspot-6" data-position="-0.13658322561195232m 0.19291990259750896m -0.059257785635595805m" data-normal="5.499820175100948e-9m -0.23011636531103216m -0.9731631201479224m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Manzana, nogal, membrillo y duraznos en el norte</div>
+      </button><button id="text-esp5" style="display: block;" class="Hotspot" slot="hotspot-10" data-position="0.007499999366700538m 0.04191165787926243m -0.01063638874146592m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Pénjamo, Abasolo y Huanímaro: Aguacate y limón</div>
+      </button><button id="text-esp6" style="display: block;" class="Hotspot" slot="hotspot-11" data-position="-0.29749998450279236m 0.029049890641151765m -0.02316084287808079m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Victoria y Xichú: mango</div>
+      </button><button id="text-esp7" style="display: block;" class="Hotspot" slot="hotspot-14" data-position="-0.18369441517850216m 0.0343201217676804m 0.10816698359979188m" data-normal="6.225050304712842e-9m -0.22450588901279633m 0.9744727321985843m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Yuriria y Uriangato: pitahaya</div>
+      </button>
+
+      <button id="text-eng4" style="display: none;" class="Hotspot" slot="hotspot-6" data-position="-0.13658322561195232m 0.19291990259750896m -0.059257785635595805m" data-normal="5.499820175100948e-9m -0.23011636531103216m -0.9731631201479224m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Apples, walnuts, quinces and peaches on the north</div>
+    </button><button id="text-eng5" style="display: none;" class="Hotspot" slot="hotspot-10" data-position="0.007499999366700538m 0.04191165787926243m -0.01063638874146592m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Pénjamo, Abasolo and Huanímaro: avocado and lemon</div>
+    </button><button id="text-eng6" style="display: none;" class="Hotspot" slot="hotspot-11" data-position="-0.29749998450279236m 0.029049890641151765m -0.02316084287808079m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Victoria and Xichú: mango</div>
+    </button><button id="text-eng7" style="display: none;" class="Hotspot" slot="hotspot-14" data-position="-0.18369441517850216m 0.0343201217676804m 0.10816698359979188m" data-normal="6.225050304712842e-9m -0.22450588901279633m 0.9744727321985843m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Yuriria and Uriangato: dragon fruit</div>
+    </button>
 
           <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
@@ -160,6 +170,12 @@
           </div>
           <div class="logo">
             <img class="imagen" src="assets/images/logo_4i_vertical.png" alt="Logo Tv4" />
+          </div>
+          <div id="text-esp3" class="subtitle" style="display: flex;">
+            <p>En Guanajuato producimos:</p>
+          </div>
+          <div id="text-eng3" class="subtitle" style="display: none;">
+            <p>In Guanajuato we produce:</p>
           </div>
         </model-viewer>
       

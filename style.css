@@ -5,7 +5,7 @@
   color: #fff;
 }
 
-.hot-hand{
+.Hotspot{
   display: block;
   width: 20px;
   height: 20px;
@@ -16,13 +16,17 @@
 }
 
 
-#annotation{
+.HotspotAnnotation{
   font-family: 'Ruda', sans-serif;
-  background-color:#76a238;
+  font-size: 1rem;
+  color: #61862e;
+  background-color:white;
   position: absolute;
   transform: translate(-35px, 15px);
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 5px;
+  width: 250px;
+  --min-hotspot-opacity: 0;
 }
 /* This keeps child nodes hidden while the element loads */
 :not(:defined) > * {
@@ -50,6 +54,11 @@ body {
 .logo {
   width: 10%;
   height: 10%;
+}
+
+.subtitle{
+  display: flex;
+  justify-content: center;
 }
 
 .dropbtn {
@@ -129,7 +138,7 @@ model-viewer {
 }
 
 h1 {
-  font-family: 'Lily Script One', cursive;
+  font-family:'Pacifico', cursive;
   font-size: 5rem;
   text-shadow: -5px 5px 10px #61862e;
 }
